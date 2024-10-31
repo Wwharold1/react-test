@@ -1,0 +1,36 @@
+@import '../../themes/scss/colors';
+
+.footer{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    max-height: 152px;
+    min-height: 110px;
+    height: 106px;
+    padding: 0px 120px;
+    left:0px;
+    bottom:0px;
+    width: 100%;
+    box-sizing: border-box;
+    .footer__title{
+        color: $primary-color;
+        font-family: 'BrLight', sans-serif;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 680px) {
+    .footer{
+        padding: 0px 6%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 152px !important;
+    }
+    .footer__hr{
+        border: 1px solid #2B304E;
+        margin: 0px 20px;
+        width: 100%;
+    }
+}

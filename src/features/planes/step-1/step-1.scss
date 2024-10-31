@@ -1,0 +1,184 @@
+.step-1{
+    button{
+        border: none;
+        background-color: transparent;
+        color: #4F4FFF;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 5px;
+        }
+    }
+    .quote__select{
+        padding: 0px 32%;
+        text-align: center;
+        .quote__select-title{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'BrMedium', sans-serif;
+            line-height: 48px;
+        }
+        .quote__select-description{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            font-family: 'BrMedium', sans-serif;
+            margin-top: 10px;
+        }
+        .quote__select-cards{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .quote__select-card{
+                width: 45%;
+                height: 212px;
+                border-radius: 24px;
+                cursor: pointer;
+                box-shadow: 0px 0px 35px 0px rgba(174,172,243,0.35);
+                background-color: white;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                padding: 15px 20px;
+                box-sizing: border-box;
+                &.select-card{
+                    border: 3px solid #03050F;
+                    box-shadow: none;
+                    background-color: transparent;
+                }
+                .select-card__checkbox{
+                    text-align: right;
+                    input{
+                        accent-color: #389E0D;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 40px;
+                    }
+                }
+                .select-card__image{
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+                .select-card__head{
+                    text-align: left;
+                    font-size: 20px;
+                    font-family: 'BrBold', sans-serif;
+                    margin-bottom: 10px;
+                }
+                .select-card__description{
+                    text-align: left;
+                    font-size: 12px;
+                    font-family: 'BrRegular', sans-serif;
+                    margin-bottom: 5px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .quote__plans{
+        padding: 0px 15%;
+        .quote__plan{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            display: none;
+            &.show{
+                display: flex !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1580px) {
+    .quote__plans{
+        padding: 0px 10% !important;
+    }
+    .quote__select{
+        padding: 0px 27% !important;
+    }
+}
+
+@media (max-width: 1340px) {
+    .quote__plans{
+        padding: 0px 5% !important;
+    }
+    .quote__select{
+        padding: 0px 20% !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .quote__plans{
+        padding: 0px !important;
+    }
+    .quote__select{
+        padding: 0px 20% !important;
+    }
+    .quote__select-card{
+        width: 240px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .quote__plans{
+        padding: 0px !important;
+        .quote__plan{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        // display: none;
+    }
+    .quote__select{
+        padding: 0px 10% !important;
+    }
+    .quote__select-card{
+        width: 240px !important;
+    }
+    .quote__select-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote__select-card-2{
+        margin-top: 20px;
+    }
+    .quote__select-title{
+        font-size: 28px !important;
+    }
+    .quote__select-description{
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .quote__select-card{
+        width: 336px !important;
+        height: 160px !important;
+        padding: 15px 20px;
+    }
+    .select-card__profile{
+        display: flex;
+        .select-card__head{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+    }
+    .select-card__image{
+        img{
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .back-btn{
+        display: none !important;
+    }
+}

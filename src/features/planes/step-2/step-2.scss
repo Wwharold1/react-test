@@ -1,0 +1,19 @@
+.step-2{
+    button{
+        border: none;
+        background-color: transparent;
+        color: #4F4FFF;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .back-btn{
+        display: none !important;
+    }
+}

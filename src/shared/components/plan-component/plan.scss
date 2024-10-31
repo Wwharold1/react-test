@@ -1,0 +1,75 @@
+.quote__select-card-pl{
+    width: 288px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0px 0px 35px 0px rgba(174,172,243,0.35);
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 20px;
+    box-sizing: border-box;
+    &.select-card{
+        border: 3px solid #03050F;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .select-card__image{
+        text-align: left;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .select-card__hr{
+        border: 1px solid #D7DBF5;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .select-card__head{
+        text-align: left;
+        font-size: 24px;
+        font-family: 'BrBold', sans-serif;
+        margin-bottom: 10px;
+    }
+    .select-card__description{
+        text-align: left;
+        font-size: 12px;
+        font-family: 'BrRegular', sans-serif;
+        margin-bottom: 5px;
+        line-height: 20px;
+        ul{
+            padding-left: 20px !important;
+            li{
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .select-card__cost{
+        .select-card__cost-title{
+            color: #7981B2;
+            font-size: 12px;
+            font-family: 'BrLight', sans-serif;
+            font-weight: 900;
+            margin-top: 25px;
+        }
+        .select-card__cost-amount{
+            color: #141938;
+            font-size: 20px;
+            font-family: 'BrBold', sans-serif;
+            margin-top: 10px;
+        }
+    }
+    .select-card__button{
+        button{
+            width: 100%;
+            color: white;
+            background-color: #FF1C44;
+            height: 48px;
+            border-radius: 25px;
+            display: block;
+            cursor: pointer;
+        }      
+    }
+}

@@ -1,0 +1,308 @@
+@import '../../themes/scss/colors';
+@import '../../themes/scss/input';
+
+.insurance{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 120px;
+    .insurance__image{
+        width: 50%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        display: block;
+    }
+    .insurance__image > img {
+        width: 37vw;
+        height: 64vh;
+        transform: scaleX(-1);
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 24px;
+    }
+    .form__head--image-movil{
+        display: none;
+    }
+    .form__divide{
+        display: none;
+    }
+    .insurance__form {
+        width: 50%;
+        height: auto;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 18% 0px 11%;
+        box-sizing: border-box;
+        input{
+            background: transparent;
+        }
+        .form__tool-text{
+            background: linear-gradient(266deg, rgba(0,255,127,1) 0%, rgba(0,244,226,1) 100%);
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            font-family: 'BrMedium', sans-serif;
+            font-weight: 700;
+            width: 172px;
+            height: 24px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .form__title{
+            font-size: 32px;
+            line-height: 40px;
+            font-family: 'BrMedium', sans-serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .form__description{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            font-family: 'BrRegular', sans-serif;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .form-dni{
+            font-size: 16px !important;
+            .form-dni__comp{
+                display: flex;
+                border: 1px solid #5E6488;
+                border-radius: 6px;
+                .input-field{
+                    position: relative;
+                    width: auto;
+                    height: 56px;
+                    font-size: 16px;
+                    padding: 0px 15px;
+                    background: transparent;
+                    color: #03050F;
+                    outline: none;
+                    &.input-field--dni{
+                        width: 30%;
+                        border-right: 1px solid #5E6488;
+                    }
+                    &.input-field--nro{
+                        width: 70%;
+                    }
+                }
+        
+                .input-field select{
+                    width: 100%;
+                    height: 100%;
+                    font-size: 16px;
+                    font-family: 'BrMedium', sans-serif;
+                    font-weight: 400;
+                    border: none;
+                    outline: none;
+                }
+            
+                .input-field input{
+                    width: 100%;
+                    height: 20px;
+                    margin-top: 25px;
+                    font-size: 16px;
+                    font-family: 'BrMedium', sans-serif;
+                    font-weight: 400;
+                    border: none;
+                    outline: none;
+                }
+            
+                .input-field label{
+                    position: absolute;
+                    top: 5%;
+                    left: 15px;
+                    transform: translateY(85%);
+                    color: $secondary-color;
+                    font-size: 19px;
+                    pointer-events: none;
+                    transition: .3s;
+                    color: $border-color;
+                }
+            
+                .input-field:focus{
+                    border: 1px solid $secondary-color;
+                }
+            
+                input:focus ~ label,
+                input:valid ~ label{
+                    top: 0;
+                    font-size: 12px;
+                }
+            }
+           
+        }
+        .form__data--phone {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .form__checkbox {
+            accent-color: #0A051E;
+            span{
+                margin-left: 15px;
+                font-size: 12px;
+                font-family: 'BrMedium', sans-serif;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+            }
+            &.form__checkbox-polity-community{
+                margin-top: 10px;
+            }
+            .form__checkbox--input{
+                display: flex;
+                align-items: center;
+            }
+        }
+        .form_terms-conditions {
+            font-size: 12px;
+            font-family: 'BrRegular', sans-serif;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            text-decoration: underline;
+        }
+
+        .form_button{
+            margin-bottom: 40px;
+            button{
+                width: 195px;
+                height: 64px;
+                color: $primary-color;
+                background-color: $secondary-color;
+                font-size: 20px;
+                font-family: 'BrBold', sans-serif;
+                border-radius: 40px;
+            }
+        }
+        .text-red-500{
+            font-size: 15px;
+            color: #c51616;
+            margin-top: 5px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+//mobile
+@media (max-width: 1750px) {
+    .insurance__form {
+        padding: 0px 21% 0px 6% !important;
+    }
+}
+
+
+@media (max-width: 1630px) {
+    .insurance__form {
+        padding: 0px 15% 0px 10% !important;
+    }
+}
+
+
+@media (max-width: 1590px) {
+    .insurance__form {
+        padding: 0px 10% 0px 12% !important;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .insurance__form {
+        padding: 0px 5% 0px 11% !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .insurance__form {
+        padding: 0px 5% 0px 5% !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .insurance__form {
+        padding: 0px 2% 0px 2% !important;
+    }
+}
+
+@media (max-width: 980px) {
+    .insurance__image{
+        display: none !important;
+    }
+    .insurance__form{
+        width: 100% !important;
+        padding: 0px 10% !important;
+        .form__head{
+            display: flex;
+            justify-content: center;
+            .form__head-text{
+                max-width: 200px;
+            }
+        }
+        .form__title{
+            font-size: 28px !important;
+            line-height: 36px !important;
+        }
+        .form__tool-text{
+            font-size: 12px !important;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .form__head--image-movil{
+            display: block;
+            margin-left: 30px;
+            img {
+                width: 136px;
+                height: 160px;
+                transform: scaleX(-1);
+                object-fit: cover;
+                object-position: 50% 50%;
+                border-radius: 24px;
+            }
+        }
+        .form__divide{
+            display: block;
+            margin: 10px 0px;
+            hr{
+                border-top: 1px solid #CCD1EE;
+            }
+        }
+        .form_button{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .insurance{
+        padding: 0px 6%;
+    }
+    .form_button{
+        button{
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .insurance{
+        padding: 0px 3%;
+    }
+}
+
+@media (max-width: 420px) {
+    .insurance{
+        padding: 0px;
+    }
+    .insurance__form{
+        padding: 0px 6% !important;
+    }
+}
